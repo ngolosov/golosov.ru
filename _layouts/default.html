@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151330851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151330851-1');
+</script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <base target="_self">
+        <link rel="shortcut icon" href="/images/cp_ico.png">
+        <!--stylesheets / link tags loaded here-->
+        <link rel="stylesheet" href="/static/bootstrap.min.css">
+        <style type="text/css">
+
+            body {
+                padding-top:80px;
+            }
+			
+			.make-me-sticky {
+  overflow-y:auto;
+  height:90vh;
+  position: -webkit-sticky;
+	position: sticky;
+	top: 80px;
+    
+  padding: 0 0px;
+  
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height:      150px;
+    margin-top: -180px;
+}
+
+      </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md" role="banner">
+            <div class="container">
+ <a href="/"
+                class="navbar-brand">Сайт Картографа</a>
+                <nav
+                class="collapse navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"> <a href="/" class="nav-link">Главная</a>
+                        </li>
+                        <li class="nav-item"> <a href="/links.html" class="nav-link">Ссылки</a>
+                        </li>
+                        <li class="nav-item"> <a href="/commutator.html" class="nav-link">Коммутатор</a>
+                        </li>
+                    </ul>
+        </nav>
+        </div>
+        </nav>
+
+        <!--main-->
+        <div class="container">
+            <div class="row">
+                <!--left-->
+                <div class="col-lg-3" id="leftCol">
+				
+				
+{{ content }}
+
+</div>
+</body>
+</html>

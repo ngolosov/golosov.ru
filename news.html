@@ -1,69 +1,12 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Сайт Картографа</title>
-        <base target="_self">
-        <link rel="shortcut icon" href="/images/cp_ico.png">
-        <!--stylesheets / link tags loaded here-->
-        <link rel="stylesheet" href="/static/bootstrap.min.css">
-        <style type="text/css">
-
-            body {
-                padding-top:80px;
-            }
-        
-        </style>
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md" role="banner">
-            <div class="container">
- <a href="/"
-                class="navbar-brand">Сайт Картографа</a>
-                <nav
-                class="collapse navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"> <a href="/" class="nav-link">Главная</a>
-                        </li>
-                        <li class="nav-item"> <a href="/links.html" class="nav-link">Ссылки</a>
-                        </li>
-                        <li class="nav-item"> <a href="/commutator.html" class="nav-link">Коммутатор</a>
-                        </li>
-                    </ul>
-        </nav>
-        </div>
-        </nav>
-
-        <!--main-->
-        <div class="container">
-            <div class="row">
-                <!--left-->
-                <div class="col-lg-3" id="leftCol">
-                    <ul class="nav flex-column" id="sidebar">
-                        <li class="nav-item"><a href="/" class="nav-link"><h6>Главная страница</h6></a>
-                        </li>
-                        <li class="nav-item"><h6>Новости</h6></li>
-                        <li class="nav-item"><a href="/news.html" class="nav-link"><h6>Обьявление от 29.05.19</h6></a>
-                        </li>
-                        <li class="nav-item"><h6>Книги</h6></li>
-                        <li class="nav-item"><a href="/book.html" class="nav-link"><h6>Книга Пасквилей с сокращениями</h6></a>
-                        </li>
-                        <li class="nav-item"><a href="https://dedkf.pythonanywhere.com" class="nav-link"><h6>Книга Пасквилей - получить полную версию</h6></a>
-                        </li>
-						<li class="nav-item"><h6>Автор рекомендует</h6></li>
-						<li class="nav-item"><a href="/links.html" class="nav-link"><h6>Ссылки</h6></a>
-						<li class="nav-item"><h6>Коммутатор</h6></li>
-						<li class="nav-item"><a href="/commutator.html" class="nav-link"><h6>Громко сказать, что вы думаете про автора и его писанину!</h6></a>
-                    </ul>
-                </div>
-                <!--/left-->
-                <!--right-->
-				
+---
+layout: default
+title: Сайт Картографа - Новости
+header: Объявление от 29. 05. 19
+---
+{% include navigation.html %}
+</div>
                 <div class="col-lg-9">
-                     <h2 id="sec0">Объявление от 29. 05. 19</h2>
+                     <h2 id="sec0">{{ page.header }}</h2>
 
                     <hr>
 <p>
@@ -73,14 +16,4 @@
 <p>Для жителей Питера, откуда и сам автор, в течение июня будет организована стационарная точка распространения книги, о чём будет объявлено дополнительно. Со временем стационарные точки будут организованы и в других городах, о чём также будет объявлено. Также в процессе организации распространение лебездронного варианта книги (опять же - следите за объявлением). О появлении новостей вы сможете узнать по изменению даты в заголовке (той, которая нынче "от 29.05.19").
 "...ослание к ослам" будет издано отдельной брошюрой, полагаю, в течение месяца.
 </p>
-			
-                </div>
-                <!--/right-->
-            </div>
-            <!--/row-->
-        </div>
-        <!--/container-->
-        <!--scripts loaded here-->
-    </body>
-
-</html>
+</div>
